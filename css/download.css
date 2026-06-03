@@ -1,0 +1,405 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+    --primary: #0B1F33;
+    --secondary: #1565C0;
+    --accent: #64B5F6;
+    --light: #F5F7FA;
+    --white: #ffffff;
+    --text: #333333;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.download-header {
+    background:
+        linear-gradient(
+            rgba(11, 31, 51, 0.88),
+            rgba(11, 31, 51, 0.88)
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 10% 80px;
+
+    border-top: 8px solid white;
+}
+
+.logo-area {
+    margin-bottom: 25px;
+}
+
+.logo-area img {
+    height: 80px;
+    width: auto;
+}
+
+.download-header h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.download-header p {
+    font-size: 20px;
+    max-width: 760px;
+    margin: 0 auto;
+    color: #E5E7EB;
+}
+
+/* MAIN */
+.download-main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 10%;
+}
+
+/* DOWNLOAD BOX */
+.download-box {
+    width: 100%;
+    max-width: 760px;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    margin-top: -90px;
+
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.tool-icon {
+    width: 78px;
+    height: 78px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background: var(--secondary);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.3);
+}
+
+.download-box h2 {
+    color: var(--primary);
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.download-box p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.features span {
+    background: #EEF6FF;
+    color: var(--secondary);
+
+    padding: 8px 15px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* DOWNLOAD BUTTON */
+.download-button {
+    display: inline-block;
+
+    background: var(--secondary);
+    color: white;
+
+    padding: 15px 34px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.download-button:hover {
+    background: #0D47A1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.3);
+}
+
+/* BACK LINK */
+.back-link {
+    display: inline-block;
+
+    margin-top: 26px;
+
+    color: var(--secondary);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #0D47A1;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(11, 31, 51, 0.95);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+
+    font-size: 14px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .download-header {
+        padding: 45px 8% 70px;
+    }
+
+    .logo-area img {
+        height: 65px;
+    }
+
+    .download-header h1 {
+        font-size: 34px;
+    }
+
+    .download-header p {
+        font-size: 17px;
+    }
+
+    .download-main {
+        padding: 60px 8%;
+    }
+
+    .download-box {
+        padding: 32px 24px;
+        margin-top: -80px;
+    }
+
+    .download-box h2 {
+        font-size: 28px;
+    }
+
+    .download-box p {
+        font-size: 16px;
+    }
+
+    .download-button {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+/* =========================
+   CORPORATE DOWNLOAD PAGE
+========================= */
+
+:root {
+    --primary: #071A2D;
+    --secondary: #0E5E9C;
+    --accent: #C9A227;
+    --light: #F4F7FA;
+}
+
+.download-header {
+    background:
+        linear-gradient(
+            rgba(7, 26, 45, 0.92),
+            rgba(7, 26, 45, 0.92)
+        );
+
+    border-top: 5px solid var(--accent);
+}
+
+.download-header h1 {
+    letter-spacing: -0.8px;
+}
+
+.download-box {
+    border-radius: 8px;
+    border-top: 5px solid var(--accent);
+}
+
+.tool-icon {
+    background: var(--primary);
+    color: var(--accent);
+}
+
+.download-button {
+    background: var(--accent);
+    color: var(--primary);
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.download-button:hover {
+    background: #E0B93D;
+    color: var(--primary);
+}
+
+.features span {
+    background: #EEF2F7;
+    color: var(--primary);
+}
+
+footer {
+    background: #061421;
+    border-top: 4px solid var(--accent);
+}  
+
+/* =========================
+   TOP ACTIONS & LANGUAGE SWITCHER
+========================= */
+
+.top-actions {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo-area {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn {
+    width: 25px;
+    height: 25px;
+
+    padding: 0;
+
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.lang-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.lang-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+.lang-btn.active {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.35);
+}
+
+@media (max-width: 768px) {
+    .top-actions {
+        justify-content: center;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    .lang-btn {
+        width: 25px;
+        height: 25px;
+    }
+}
