@@ -243,8 +243,74 @@ document.addEventListener("DOMContentLoaded", function () {
             welllog_feature_2: "Data Display",
             welllog_feature_3: "Analysis Tool",
 
+            services_detail_label: "Explore Services",
+            services_detail_title: "Integrated Oil & Gas Consulting Services",
+            services_detail_desc: "We provide technical, economic, and strategic advisory services to support upstream oil and gas projects from asset evaluation to investment decision-making.",
+
+            services_capabilities_title: "Our Consulting Capabilities",
+            services_capabilities_desc: "Our services are designed to help operators, investors, and institutions evaluate upstream assets with clear technical analysis, reliable economic modeling, and practical development recommendations.",
+
+            detail_service_1_title: "Reservoir & Production Engineering",
+            detail_service_1_desc: "Technical evaluation of reservoir performance, production behavior, reserves potential, and field optimization opportunities.",
+            detail_service_1_item_1: "Reservoir performance review",
+            detail_service_1_item_2: "Production forecasting",
+            detail_service_1_item_3: "Well performance analysis",
+            detail_service_1_item_4: "Reserves and resources evaluation",
+
+            detail_service_2_title: "Economic & Fiscal Modeling",
+            detail_service_2_desc: "Economic evaluation for upstream projects using cashflow modeling, fiscal terms, investment indicators, and sensitivity scenarios.",
+            detail_service_2_item_1: "PSC economic analysis",
+            detail_service_2_item_2: "NPV, IRR, and payout calculation",
+            detail_service_2_item_3: "Cost recovery and gross split modeling",
+            detail_service_2_item_4: "Sensitivity and scenario analysis",
+
+            detail_service_3_title: "Field Development Planning",
+            detail_service_3_desc: "Structured field development support covering development concepts, production strategy, cost optimization, and risk assessment.",
+            detail_service_3_item_1: "Development concept selection",
+            detail_service_3_item_2: "CAPEX and OPEX optimization",
+            detail_service_3_item_3: "Development scheduling",
+            detail_service_3_item_4: "Risk and uncertainty review",
+
+            detail_service_4_title: "Technical Due Diligence",
+            detail_service_4_desc: "Independent technical and commercial assessment to support asset acquisition, divestment, financing, and investment screening.",
+            detail_service_4_item_1: "Asset valuation support",
+            detail_service_4_item_2: "Subsurface and facilities review",
+            detail_service_4_item_3: "Investment screening",
+            detail_service_4_item_4: "Independent technical opinion",
+
+            detail_service_5_title: "Oil & Gas Software Tools",
+            detail_service_5_desc: "Practical tools and templates to support technical and economic evaluations for upstream oil and gas projects.",
+            detail_service_5_item_1: "PSC Economic Tool",
+            detail_service_5_item_2: "Well Log Display Tool",
+            detail_service_5_item_3: "Engineering and evaluation templates",
+            detail_service_5_item_4: "Simple decision-support utilities",
+
+            detail_service_6_title: "Strategic Advisory",
+            detail_service_6_desc: "Advisory support for upstream business decisions, portfolio review, development strategy, and project prioritization.",
+            detail_service_6_item_1: "Portfolio review",
+            detail_service_6_item_2: "Project screening",
+            detail_service_6_item_3: "Commercial strategy",
+            detail_service_6_item_4: "Decision-support recommendations",
+
+            workflow_title: "How We Work",
+            workflow_desc: "We use a structured consulting approach to ensure every project is reviewed with clear objectives, reliable data, practical analysis, and actionable recommendations.",
+            workflow_1_title: "Project Understanding",
+            workflow_1_desc: "We define project objectives, available data, key issues, and expected decision outputs.",
+            workflow_2_title: "Technical Review",
+            workflow_2_desc: "We evaluate reservoir, production, facilities, cost, risk, and project assumptions.",
+            workflow_3_title: "Economic Evaluation",
+            workflow_3_desc: "We model project cashflow, fiscal terms, investment metrics, and sensitivity cases.",
+            workflow_4_title: "Recommendation",
+            workflow_4_desc: "We deliver clear conclusions and practical recommendations for technical and investment decisions.",
+
+            services_cta_title: "Ready to Discuss Your Project?",
+            services_cta_desc: "Contact us to discuss how our technical, economic, and strategic advisory services can support your upstream oil and gas project.",
+            services_cta_contact: "Contact Us",
+            services_cta_home: "Back to Home",
+
             download_now: "Download Now",
             back_home: "← Back to Home"
+            
         },
 
         id: {
@@ -319,6 +385,71 @@ document.addEventListener("DOMContentLoaded", function () {
             welllog_feature_1: "Tampilan Well Log",
             welllog_feature_2: "Tampilan Data",
             welllog_feature_3: "Alat Analisis",
+
+            services_detail_label: "Lihat Layanan",
+            services_detail_title: "Layanan Konsultasi Minyak & Gas Terintegrasi",
+            services_detail_desc: "Kami menyediakan layanan konsultasi teknis, ekonomi, dan strategis untuk mendukung proyek hulu minyak dan gas, mulai dari evaluasi aset hingga pengambilan keputusan investasi.",
+
+            services_capabilities_title: "Kapabilitas Konsultasi Kami",
+            services_capabilities_desc: "Layanan kami dirancang untuk membantu operator, investor, dan institusi dalam mengevaluasi aset hulu melalui analisis teknis yang jelas, pemodelan ekonomi yang andal, serta rekomendasi pengembangan yang praktis.",
+
+            detail_service_1_title: "Rekayasa Reservoir & Produksi",
+            detail_service_1_desc: "Evaluasi teknis terhadap kinerja reservoir, perilaku produksi, potensi cadangan, dan peluang optimasi lapangan.",
+            detail_service_1_item_1: "Kajian kinerja reservoir",
+            detail_service_1_item_2: "Proyeksi produksi",
+            detail_service_1_item_3: "Analisis kinerja sumur",
+            detail_service_1_item_4: "Evaluasi cadangan dan sumber daya",
+
+            detail_service_2_title: "Pemodelan Ekonomi & Fiskal",
+            detail_service_2_desc: "Evaluasi ekonomi proyek hulu menggunakan pemodelan cashflow, ketentuan fiskal, indikator investasi, dan skenario sensitivitas.",
+            detail_service_2_item_1: "Analisis keekonomian PSC",
+            detail_service_2_item_2: "Perhitungan NPV, IRR, dan payout",
+            detail_service_2_item_3: "Pemodelan cost recovery dan gross split",
+            detail_service_2_item_4: "Analisis sensitivitas dan skenario",
+
+            detail_service_3_title: "Perencanaan Pengembangan Lapangan",
+            detail_service_3_desc: "Dukungan perencanaan pengembangan lapangan secara terstruktur, mencakup konsep pengembangan, strategi produksi, optimasi biaya, dan penilaian risiko.",
+            detail_service_3_item_1: "Pemilihan konsep pengembangan",
+            detail_service_3_item_2: "Optimasi CAPEX dan OPEX",
+            detail_service_3_item_3: "Penjadwalan pengembangan",
+            detail_service_3_item_4: "Kajian risiko dan ketidakpastian",
+
+            detail_service_4_title: "Uji Tuntas Teknis",
+            detail_service_4_desc: "Penilaian teknis dan komersial independen untuk mendukung akuisisi aset, divestasi, pembiayaan, dan penyaringan investasi.",
+            detail_service_4_item_1: "Dukungan valuasi aset",
+            detail_service_4_item_2: "Kajian subsurface dan fasilitas",
+            detail_service_4_item_3: "Penyaringan investasi",
+            detail_service_4_item_4: "Opini teknis independen",
+
+            detail_service_5_title: "Perangkat Lunak Minyak & Gas",
+            detail_service_5_desc: "Tools dan template praktis untuk mendukung evaluasi teknis dan ekonomi pada proyek hulu minyak dan gas.",
+            detail_service_5_item_1: "Alat PSC Economic",
+            detail_service_5_item_2: "Alat Well Log Display",
+            detail_service_5_item_3: "Template rekayasa dan evaluasi",
+            detail_service_5_item_4: "Utilitas sederhana pendukung keputusan",
+
+            detail_service_6_title: "Konsultasi Strategis",
+            detail_service_6_desc: "Dukungan konsultasi untuk keputusan bisnis hulu, kajian portofolio, strategi pengembangan, dan prioritas proyek.",
+            detail_service_6_item_1: "Kajian portofolio",
+            detail_service_6_item_2: "Penyaringan proyek",
+            detail_service_6_item_3: "Strategi komersial",
+            detail_service_6_item_4: "Rekomendasi pendukung keputusan",
+
+            workflow_title: "Cara Kerja Kami",
+            workflow_desc: "Kami menggunakan pendekatan konsultasi yang terstruktur agar setiap proyek dikaji dengan tujuan yang jelas, data yang andal, analisis praktis, dan rekomendasi yang dapat diterapkan.",
+            workflow_1_title: "Pemahaman Proyek",
+            workflow_1_desc: "Kami mendefinisikan tujuan proyek, data yang tersedia, isu utama, dan keluaran keputusan yang diharapkan.",
+            workflow_2_title: "Kajian Teknis",
+            workflow_2_desc: "Kami mengevaluasi reservoir, produksi, fasilitas, biaya, risiko, dan asumsi proyek.",
+            workflow_3_title: "Evaluasi Ekonomi",
+            workflow_3_desc: "Kami memodelkan cashflow proyek, ketentuan fiskal, metrik investasi, dan skenario sensitivitas.",
+            workflow_4_title: "Rekomendasi",
+            workflow_4_desc: "Kami menyampaikan kesimpulan yang jelas dan rekomendasi praktis untuk keputusan teknis dan investasi.",
+
+            services_cta_title: "Siap Mendiskusikan Proyek Anda?",
+            services_cta_desc: "Hubungi kami untuk mendiskusikan bagaimana layanan konsultasi teknis, ekonomi, dan strategis kami dapat mendukung proyek hulu minyak dan gas Anda.",
+            services_cta_contact: "Hubungi Kami",
+            services_cta_home: "Kembali ke Beranda",
 
             download_now: "Unduh Sekarang",
             back_home: "← Kembali ke Beranda"
