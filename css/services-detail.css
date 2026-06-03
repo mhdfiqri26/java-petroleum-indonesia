@@ -1,0 +1,283 @@
+/* =========================
+   SERVICES DETAIL HERO
+========================= */
+
+.services-detail-hero {
+    min-height: 70vh;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 26, 45, 0.95),
+            rgba(7, 26, 45, 0.72)
+        ),
+        url('assets/header.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 160px 10% 90px;
+}
+
+.services-detail-content {
+    max-width: 820px;
+}
+
+.services-detail-content span {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 8px 16px;
+
+    background: rgba(201, 162, 39, 0.14);
+    color: #F4D46B;
+
+    border: 1px solid rgba(201, 162, 39, 0.45);
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.services-detail-content h1 {
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.services-detail-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #DDE6EF;
+}
+
+/* =========================
+   DETAIL SECTION
+========================= */
+
+.detail-section {
+    padding: 100px 10%;
+    background: var(--light);
+}
+
+.detail-intro {
+    max-width: 950px;
+    margin-bottom: 55px;
+}
+
+.detail-intro h2 {
+    color: var(--primary);
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.detail-intro p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #444;
+}
+
+/* =========================
+   SERVICE DETAIL CARD
+========================= */
+
+.service-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+}
+
+.service-detail-card {
+    background: white;
+
+    padding: 34px 30px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(7, 26, 45, 0.08);
+    border-top: 4px solid var(--accent);
+
+    box-shadow: 0 8px 24px rgba(7, 26, 45, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.service-detail-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(7, 26, 45, 0.14);
+}
+
+.service-detail-card .detail-icon {
+    font-size: 44px;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.service-detail-card h3 {
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.service-detail-card p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.service-detail-card ul {
+    padding-left: 20px;
+}
+
+.service-detail-card li {
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.service-detail-card a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.service-detail-card a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   WORKFLOW SECTION
+========================= */
+
+.workflow-section {
+    background: white;
+    padding: 100px 10%;
+}
+
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 26px;
+
+    margin-top: 45px;
+}
+
+.workflow-item {
+    background: var(--light);
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    border-left: 4px solid var(--accent);
+}
+
+.workflow-number {
+    width: 42px;
+    height: 42px;
+
+    background: var(--primary);
+    color: var(--accent);
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.workflow-item h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.workflow-item p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.services-cta {
+    background: var(--primary);
+    color: white;
+
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.services-cta h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.services-cta h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-cta p {
+    max-width: 780px;
+    margin: 0 auto 32px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #DDE6EF;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .services-detail-hero {
+        padding: 145px 8% 75px;
+        text-align: center;
+    }
+
+    .services-detail-content h1 {
+        font-size: 38px;
+    }
+
+    .services-detail-content p {
+        font-size: 17px;
+    }
+
+    .detail-section,
+    .workflow-section,
+    .services-cta {
+        padding: 80px 8%;
+    }
+
+    .detail-intro h2,
+    .services-cta h2 {
+        font-size: 32px;
+    }
+}
