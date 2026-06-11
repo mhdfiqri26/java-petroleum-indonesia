@@ -34,8 +34,23 @@
 
         <ul id="navMenu">
             <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
-            <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
-            <li><a href="index.html#experience" data-i18n="nav_experience">Experience</a></li>
+
+            <li class="nav-dropdown">
+                <a href="services-detail.html" class="dropdown-toggle">
+                    <span data-i18n="nav_services">Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="services-detail.html" data-i18n="dropdown_services_detail">Explore Services</a></li>
+                    <li><a href="index.html#service-1" data-i18n="dropdown_service_1">Reservoir & Production</a></li>
+                    <li><a href="index.html#service-2" data-i18n="dropdown_service_2">Economic & Fiscal</a></li>
+                    <li><a href="index.html#service-3" data-i18n="dropdown_service_3">Field Development</a></li>
+                </ul>
+            </li>
+
+            <li><a href="company-profile.html" data-i18n="nav_company">Company</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
             <li><a href="index.html#purchase" data-i18n="nav_purchase">Purchase</a></li>
             <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
@@ -171,6 +186,8 @@
     </footer>
 
     <!-- JS -->
+    <script src="js/lang/en.js"></script>
+    <script src="js/lang/id.js"></script>
     <script src="js/script.js"></script>
 
 </body>

@@ -27,13 +27,13 @@
     <nav id="navbar">
 
         <div class="logo">
-            <img src="css/assets/logotest2.png" alt="Java Petroleum Indonesia Logo">
+            <a href="index.html" aria-label="Back to Home">
+                <img src="css/assets/logotest2.png" alt="Java Petroleum Indonesia Logo">
+            </a>
         </div>
 
         <ul id="navMenu">
-            <li>
-                <a href="#about" data-i18n="nav_about">About</a>
-            </li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
 
             <li class="nav-dropdown">
                 <a href="#services" class="dropdown-toggle">
@@ -42,23 +42,17 @@
                 </a>
 
                 <ul class="dropdown-menu">
+                    <li><a href="services-detail.html" data-i18n="dropdown_services_detail">Explore Services</a></li>
                     <li><a href="#service-1" data-i18n="dropdown_service_1">Reservoir & Production</a></li>
                     <li><a href="#service-2" data-i18n="dropdown_service_2">Economic & Fiscal</a></li>
                     <li><a href="#service-3" data-i18n="dropdown_service_3">Field Development</a></li>
                 </ul>
             </li>
 
-            <li>
-                <a href="#experience" data-i18n="nav_experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#purchase" data-i18n="nav_purchase">Purchase</a>
-            </li>
-
-            <li>
-                <a href="#contact" data-i18n="nav_contact">Contact</a>
-            </li>
+            <li><a href="company-profile.html" data-i18n="nav_company">Company</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+            <li><a href="#purchase" data-i18n="nav_purchase">Purchase</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -606,6 +600,8 @@
     </footer>
 
     <!-- JS -->
+    <script src="js/lang/en.js"></script>
+    <script src="js/lang/id.js"></script>
     <script src="js/script.js"></script>
 
 </body>
