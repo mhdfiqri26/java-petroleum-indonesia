@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Oil and Gas Consulting | Professional Advisory</title>
+
+    <link rel="icon" type="image/png" href="css/assets/logotest.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Professional oil & gas consulting firm offering technical, economic, and strategic advisory services.">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+
+        <div class="logo">
+            <a href="index.html" aria-label="Back to Home">
+                <img src="css/assets/logotest2.png" alt="Java Petroleum Indonesia Logo">
+            </a>
+        </div>
+
+        <ul id="navMenu">
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+
+            <li class="nav-dropdown">
+                <a href="#services" class="dropdown-toggle">
+                    <span data-i18n="nav_services">Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="services-detail.html" data-i18n="dropdown_services_detail">Explore Services</a></li>
+                    <li><a href="#service-1" data-i18n="dropdown_service_1">Reservoir & Production</a></li>
+                    <li><a href="#service-2" data-i18n="dropdown_service_2">Economic & Fiscal</a></li>
+                    <li><a href="#service-3" data-i18n="dropdown_service_3">Field Development</a></li>
+                </ul>
+            </li>
+
+            <li><a href="company-profile.html" data-i18n="nav_company">Company</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+            <li><a href="#purchase" data-i18n="nav_purchase">Purchase</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" type="button" aria-label="English">
+                    <img src="css/assets/us_flag_logo.png" alt="English Flag">
+                </button>
+
+                <button class="lang-btn" data-lang="id" type="button" aria-label="Bahasa Indonesia">
+                    <img src="css/assets/id_flag_logo.png" alt="Indonesia Flag">
+                </button>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <!-- HEADER -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label" data-i18n="hero_label">
+                Upstream Oil & Gas Advisory
+            </span>
+
+            <h1 data-i18n="hero_title">
+                Professional Oil & Gas Consulting Services
+            </h1>
+
+            <p data-i18n="hero_desc">
+                Technical, economic, and strategic advisory for upstream oil and gas
+                projects, supporting reliable investment and development decisions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="services-detail.html" class="btn btn-primary" data-i18n="btn_services">
+                    Explore Services
+                </a>
+
+                <a href="#contact" class="btn btn-outline" data-i18n="btn_discuss">
+                    Discuss Your Project
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <h2 data-i18n="about_title">About Us</h2>
+
+            <p data-i18n="about_desc_1">
+                Oil and Gas Consulting is a professional upstream energy advisory firm
+                specializing in technical evaluation, economic analysis, field development
+                planning, and strategic consulting services for the oil & gas industry.
+            </p>
+
+            <p data-i18n="about_desc_2">
+                Our team combines industry experience with practical engineering and
+                commercial insight to deliver reliable, data-driven solutions that support
+                operators, investors, and government institutions in achieving sustainable
+                and efficient energy development.
+            </p>
+
+            <div class="corporate-highlight">
+
+                <div>
+                    <h3 data-i18n="about_box_1_title">Decision-Oriented</h3>
+                    <p data-i18n="about_box_1_desc">
+                        Our analysis is designed to support clear technical, commercial,
+                        and investment decisions.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 data-i18n="about_box_2_title">Integrated Evaluation</h3>
+                    <p data-i18n="about_box_2_desc">
+                        We combine reservoir, production, facilities, economics, and
+                        strategic perspectives.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 data-i18n="about_box_3_title">Practical Advisory</h3>
+                    <p data-i18n="about_box_3_desc">
+                        Our recommendations are practical, structured, and applicable to
+                        real upstream project challenges.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services">
+
+            <h2 data-i18n="services_title">Our Services</h2>
+
+            <div class="services">
+
+                <div class="card" id="service-1">
+                    <div class="icon">
+                        <i class="fa-solid fa-oil-well"></i>
+                    </div>
+
+                    <h3 data-i18n="service_1_title">Reservoir & Production Engineering</h3>
+                    <p data-i18n="service_1_desc">
+                        Field development planning, reserves estimation,
+                        production forecasting, and well performance analysis.
+                    </p>
+                </div>
+
+                <div class="card" id="service-2">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h3 data-i18n="service_2_title">Economic & Fiscal Modeling</h3>
+                    <p data-i18n="service_2_desc">
+                        PSC economics, NPV/IRR analysis, cost recovery and gross split modeling,
+                        and investment evaluation.
+                    </p>
+                </div>
+
+                <div class="card" id="service-3">
+                    <div class="icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+
+                    <h3 data-i18n="service_3_title">Field Development Planning</h3>
+                    <p data-i18n="service_3_desc">
+                        Concept selection, CAPEX/OPEX optimization,
+                        development scheduling, and risk analysis.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+
+                    <h3 data-i18n="service_4_title">Technical Due Diligence</h3>
+                    <p data-i18n="service_4_desc">
+                        Asset valuation, subsurface and facilities review,
+                        investment screening, and independent assessments.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3 data-i18n="service_5_title">Free Software</h3>
+                    <p data-i18n="service_5_desc">
+                        Access to selected free oil & gas tools, templates,
+                        and utilities supporting technical and economic evaluations.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="psc-economic-download.html" data-i18n="software_1">PSC Economic</a>
+                        </li>
+
+                        <li>
+                            <a href="well-log-display-download.html" data-i18n="software_2">Well Log Display</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+
+            <h2 data-i18n="experience_title">Industry Experience</h2>
+
+            <p data-i18n="experience_desc">
+                Our consultants have extensive experience across onshore and offshore
+                oil & gas projects, including exploration, development,
+                production optimization, and late-life asset management.
+            </p>
+
+        </section>
+
+        <!-- SELECTED EXPERIENCE -->
+        <section id="selected-experience" class="selected-experience">
+
+            <h2 data-i18n="selected_exp_title">Selected Experience</h2>
+
+            <p class="section-intro" data-i18n="selected_exp_desc">
+                Selected advisory experience supporting upstream oil and gas evaluation,
+                investment decisions, and field development planning.
+            </p>
+
+            <div class="experience-grid">
+
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_1_tag">Asset Evaluation</span>
+
+                    <h3 data-i18n="selected_exp_1_title">Upstream Asset Evaluation</h3>
+
+                    <p data-i18n="selected_exp_1_desc">
+                        Technical and commercial evaluation of upstream oil and gas assets,
+                        including production potential, reserves outlook, cost assumptions,
+                        and investment screening.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_2_tag">Economic Review</span>
+
+                    <h3 data-i18n="selected_exp_2_title">PSC Economic Assessment</h3>
+
+                    <p data-i18n="selected_exp_2_desc">
+                        Cashflow modeling and fiscal analysis for Production Sharing Contract
+                        projects, including NPV, IRR, payout, sensitivity, and scenario evaluation.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_3_tag">Development Planning</span>
+
+                    <h3 data-i18n="selected_exp_3_title">Field Development Planning Support</h3>
+
+                    <p data-i18n="selected_exp_3_desc">
+                        Support for development concept selection, production strategy,
+                        CAPEX/OPEX review, project scheduling, and risk assessment.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_4_tag">Technical Review</span>
+
+                    <h3 data-i18n="selected_exp_4_title">Production & Well Performance Review</h3>
+
+                    <p data-i18n="selected_exp_4_desc">
+                        Review of production behavior, well performance, operating constraints,
+                        and optimization opportunities to improve asset performance.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONSULTANT PROFILE -->
+        <section class="consultant-profile">
+
+            <div class="profile-wrapper">
+
+                <div class="profile-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+
+                <div class="profile-content">
+                    <span class="section-label" data-i18n="profile_label">Consultant Profile</span>
+
+                    <h2 data-i18n="profile_title">
+                        Practical Advisory Backed by Technical and Commercial Insight
+                    </h2>
+
+                    <p data-i18n="profile_desc">
+                        Our consulting approach combines upstream engineering understanding,
+                        economic evaluation, and strategic advisory experience to help clients
+                        make clearer and more reliable project decisions.
+                    </p>
+
+                    <div class="profile-points">
+                        <span data-i18n="profile_point_1">Reservoir & Production Understanding</span>
+                        <span data-i18n="profile_point_2">Economic & Fiscal Evaluation</span>
+                        <span data-i18n="profile_point_3">Investment-Oriented Recommendations</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+
+            <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+
+            <p class="section-intro" data-i18n="faq_desc">
+                Common questions about our oil and gas consulting services, software tools,
+                and project support.
+            </p>
+
+            <div class="faq-list">
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_1_q">
+                        What type of oil and gas projects do you support?
+                    </summary>
+
+                    <p data-i18n="faq_1_a">
+                        We support upstream oil and gas projects including asset evaluation,
+                        production review, field development planning, PSC economic analysis,
+                        and technical due diligence.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_2_q">
+                        Can you support PSC economic evaluation?
+                    </summary>
+
+                    <p data-i18n="faq_2_a">
+                        Yes. We provide PSC economic analysis including cashflow modeling,
+                        NPV, IRR, payout calculation, cost recovery, gross split, sensitivity,
+                        and scenario evaluation.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_3_q">
+                        Do you provide technical due diligence services?
+                    </summary>
+
+                    <p data-i18n="faq_3_a">
+                        Yes. We provide independent technical and commercial review to support
+                        acquisition, divestment, financing, project screening, and investment decisions.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_4_q">
+                        Are the software tools free to download?
+                    </summary>
+
+                    <p data-i18n="faq_4_a">
+                        Yes. Selected oil and gas tools are provided as free resources to support
+                        technical and economic evaluation activities.
+                    </p>
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- PURCHASE -->
+        <section id="purchase" class="purchase-section">
+
+            <span class="section-label" data-i18n="purchase_label">Professional Purchase</span>
+
+            <h2 data-i18n="purchase_title">Choose a Professional Support Package</h2>
+
+            <p class="section-intro" data-i18n="purchase_desc">
+                Select a consulting or software support package, submit your project details,
+                and receive a professional quotation or invoice confirmation.
+            </p>
+
+            <div class="purchase-steps">
+                <div class="purchase-step">
+                    <strong>01</strong>
+                    <span data-i18n="purchase_step_1">Choose package</span>
+                </div>
+
+                <div class="purchase-step">
+                    <strong>02</strong>
+                    <span data-i18n="purchase_step_2">Send project details</span>
+                </div>
+
+                <div class="purchase-step">
+                    <strong>03</strong>
+                    <span data-i18n="purchase_step_3">Receive quotation / invoice</span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+
+                <article class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-badge" data-i18n="package_1_badge">Starter</span>
+                        <h3 data-i18n="package_1_title">Technical Consultation</h3>
+                        <p data-i18n="package_1_desc">Initial discussion and professional review for early-stage upstream questions.</p>
+                    </div>
+
+                    <div class="price" data-i18n="package_price_quote">Request Quotation</div>
+
+                    <ul>
+                        <li data-i18n="package_1_item_1">Project requirement review</li>
+                        <li data-i18n="package_1_item_2">Online consultation session</li>
+                        <li data-i18n="package_1_item_3">Summary recommendation</li>
+                    </ul>
+
+                    <a href="checkout.html?plan=consultation" class="btn btn-primary order-btn" data-plan="Technical Consultation" data-i18n="package_btn">Order Package</a>
+                </article>
+
+                <article class="pricing-card featured">
+                    <div class="pricing-header">
+                        <span class="pricing-badge" data-i18n="package_2_badge">Recommended</span>
+                        <h3 data-i18n="package_2_title">Economic Evaluation</h3>
+                        <p data-i18n="package_2_desc">PSC economic model review for cashflow, NPV, IRR, sensitivity, and investment screening.</p>
+                    </div>
+
+                    <div class="price" data-i18n="package_price_custom">Custom Project Fee</div>
+
+                    <ul>
+                        <li data-i18n="package_2_item_1">PSC / fiscal model setup</li>
+                        <li data-i18n="package_2_item_2">NPV, IRR, payout, and sensitivity</li>
+                        <li data-i18n="package_2_item_3">Professional evaluation summary</li>
+                    </ul>
+
+                    <a href="checkout.html?plan=economic" class="btn btn-primary order-btn" data-plan="Economic Evaluation" data-i18n="package_btn">Order Package</a>
+                </article>
+
+                <article class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-badge" data-i18n="package_3_badge">Advanced</span>
+                        <h3 data-i18n="package_3_title">Integrated Advisory</h3>
+                        <p data-i18n="package_3_desc">Technical, economic, and strategic support for field development or asset evaluation.</p>
+                    </div>
+
+                    <div class="price" data-i18n="package_price_scope">Based on Scope</div>
+
+                    <ul>
+                        <li data-i18n="package_3_item_1">Reservoir / production review</li>
+                        <li data-i18n="package_3_item_2">Development and cost assumptions</li>
+                        <li data-i18n="package_3_item_3">Decision-oriented recommendation</li>
+                    </ul>
+
+                    <a href="checkout.html?plan=integrated" class="btn btn-primary order-btn" data-plan="Integrated Advisory" data-i18n="package_btn">Order Package</a>
+                </article>
+
+            </div>
+
+            <div class="purchase-note">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span data-i18n="purchase_note">Secure request flow: order details are sent to the consultant first. Payment is confirmed only after quotation or invoice approval.</span>
+            </div>
+
+        </section>
+
+        <!-- WHY -->
+        <section class="why-corporate">
+
+            <div class="why-content">
+
+                <span class="section-label" data-i18n="why_label">
+                    Why Work With Us
+                </span>
+
+                <h2 data-i18n="why_title">
+                    Integrated Advisory for Better Upstream Decisions
+                </h2>
+
+                <p data-i18n="why_desc">
+                    We help clients evaluate oil and gas assets from technical,
+                    economic, and strategic perspectives to support clear,
+                    practical, and investment-oriented decisions.
+                </p>
+
+            </div>
+
+            <div class="why-list">
+
+                <div class="why-item">
+                    <h3 data-i18n="why_1_title">Technical Depth</h3>
+                    <p data-i18n="why_1_desc">
+                        Reservoir, production, field development, and asset performance
+                        analysis based on practical industry understanding.
+                    </p>
+                </div>
+
+                <div class="why-item">
+                    <h3 data-i18n="why_2_title">Commercial Understanding</h3>
+                    <p data-i18n="why_2_desc">
+                        Economic evaluation, fiscal modeling, cashflow analysis,
+                        sensitivity cases, and investment metrics.
+                    </p>
+                </div>
+
+                <div class="why-item">
+                    <h3 data-i18n="why_3_title">Strategic Perspective</h3>
+                    <p data-i18n="why_3_desc">
+                        Clear recommendations to support project screening,
+                        development planning, and investment decision-making.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+
+            <h2 data-i18n="contact_title">Contact Us</h2>
+
+            <div class="contact-box">
+
+                <p>
+                    <strong data-i18n="contact_email">Email:</strong>
+                    <a href="mailto:mraphael@java-petroleum.com">
+                        mraphael@java-petroleum.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong data-i18n="contact_phone">Phone:</strong>
+                    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project."
+                        target="_blank">
+                        +62 857-1439-3515
+                    </a>
+                </p>
+
+                <p>
+                    <strong data-i18n="contact_location">Location:</strong>
+                    <span data-i18n="contact_location_value">Jakarta, Indonesia</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © <span id="currentYear">2026</span>
+            <span data-i18n="footer_rights">Oil and Gas Consulting. All Rights Reserved.</span>
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

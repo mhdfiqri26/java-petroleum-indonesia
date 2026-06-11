@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Professional Purchase | Oil and Gas Consulting</title>
+
+    <link rel="icon" type="image/png" href="css/assets/logotest.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Request professional oil and gas consulting services, software support, quotation, or invoice confirmation.">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="checkout-page">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+
+        <div class="logo">
+            <a href="index.html" aria-label="Back to Home">
+                <img src="css/assets/logotest2.png" alt="Java Petroleum Indonesia Logo">
+            </a>
+        </div>
+
+        <ul id="navMenu">
+            <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+
+            <li class="nav-dropdown">
+                <a href="services-detail.html" class="dropdown-toggle">
+                    <span data-i18n="nav_services">Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="services-detail.html" data-i18n="dropdown_services_detail">Explore Services</a></li>
+                    <li><a href="index.html#service-1" data-i18n="dropdown_service_1">Reservoir & Production</a></li>
+                    <li><a href="index.html#service-2" data-i18n="dropdown_service_2">Economic & Fiscal</a></li>
+                    <li><a href="index.html#service-3" data-i18n="dropdown_service_3">Field Development</a></li>
+                </ul>
+            </li>
+
+            <li><a href="company-profile.html" data-i18n="nav_company">Company</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+            <li><a href="index.html#purchase" data-i18n="nav_purchase">Purchase</a></li>
+            <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" type="button" aria-label="English">
+                    <img src="css/assets/us_flag_logo.png" alt="English Flag">
+                </button>
+
+                <button class="lang-btn" data-lang="id" type="button" aria-label="Bahasa Indonesia">
+                    <img src="css/assets/id_flag_logo.png" alt="Indonesia Flag">
+                </button>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <!-- CHECKOUT HERO -->
+    <header class="checkout-hero">
+        <div class="checkout-hero-content">
+            <span class="hero-label" data-i18n="checkout_label">Professional Purchase</span>
+
+            <h1 data-i18n="checkout_title">Request Service Quotation</h1>
+
+            <p data-i18n="checkout_desc">
+                Complete the form below to request a quotation, invoice, or professional support confirmation.
+                Your request will be sent directly to the consultant through WhatsApp.
+            </p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="checkout-section">
+
+            <div class="checkout-layout">
+
+                <div class="checkout-card form-card">
+                    <h2 data-i18n="checkout_form_title">Order Details</h2>
+
+                    <form id="checkoutForm" class="checkout-form">
+
+                        <label for="checkoutPlan" data-i18n="checkout_plan_label">Selected package</label>
+                        <select id="checkoutPlan" name="plan" required>
+                            <option value="consultation" data-i18n="checkout_option_consultation">Technical Consultation</option>
+                            <option value="economic" data-i18n="checkout_option_economic">Economic Evaluation</option>
+                            <option value="integrated" data-i18n="checkout_option_integrated">Integrated Advisory</option>
+                            <option value="psc-software-support" data-i18n="checkout_option_psc">PSC Economic Software Support</option>
+                            <option value="well-log-support" data-i18n="checkout_option_welllog">Well Log Display Software Support</option>
+                        </select>
+
+                        <label for="clientName" data-i18n="checkout_name_label">Full name</label>
+                        <input type="text" id="clientName" name="clientName" placeholder="Your name" data-i18n-placeholder="checkout_name_placeholder" required>
+
+                        <label for="companyName" data-i18n="checkout_company_label">Company / institution</label>
+                        <input type="text" id="companyName" name="companyName" placeholder="Company name" data-i18n-placeholder="checkout_company_placeholder">
+
+                        <label for="clientEmail" data-i18n="checkout_email_label">Email</label>
+                        <input type="email" id="clientEmail" name="clientEmail" placeholder="email@example.com" required>
+
+                        <label for="clientPhone" data-i18n="checkout_phone_label">WhatsApp / phone</label>
+                        <input type="tel" id="clientPhone" name="clientPhone" placeholder="+62 ..." required>
+
+                        <label for="projectBrief" data-i18n="checkout_brief_label">Project brief</label>
+                        <textarea id="projectBrief" name="projectBrief" rows="5" placeholder="Tell us about your project, data availability, expected output, and timeline." data-i18n-placeholder="checkout_brief_placeholder" required></textarea>
+
+                        <button type="submit" class="btn btn-primary checkout-submit" data-i18n="checkout_submit">
+                            Send Request via WhatsApp
+                        </button>
+
+                        <p class="form-note" data-i18n="checkout_form_note">
+                            This form does not collect payment automatically. Payment is processed after quotation or invoice approval.
+                        </p>
+
+                    </form>
+                </div>
+
+                <aside class="checkout-card summary-card">
+                    <span class="section-label" data-i18n="checkout_summary_label">Order Summary</span>
+
+                    <h2 id="checkoutSummaryTitle">Technical Consultation</h2>
+
+                    <p id="checkoutSummaryDesc" data-i18n="checkout_summary_desc">
+                        Submit your details and our team will review the scope before confirming quotation and next steps.
+                    </p>
+
+                    <div class="summary-list">
+                        <div>
+                            <strong data-i18n="checkout_summary_price_label">Price</strong>
+                            <span id="checkoutPrice" data-i18n="package_price_quote">Request Quotation</span>
+                        </div>
+
+                        <div>
+                            <strong data-i18n="checkout_summary_payment_label">Payment</strong>
+                            <span data-i18n="checkout_summary_payment">Invoice / bank transfer after confirmation</span>
+                        </div>
+
+                        <div>
+                            <strong data-i18n="checkout_summary_delivery_label">Delivery</strong>
+                            <span data-i18n="checkout_summary_delivery">Online consultation / project report based on scope</span>
+                        </div>
+                    </div>
+
+                    <a href="index.html#purchase" class="back-link" data-i18n="checkout_change_package">
+                        ← Change package
+                    </a>
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © <span id="currentYear">2026</span>
+            <span data-i18n="footer_rights">Oil and Gas Consulting. All Rights Reserved.</span>
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

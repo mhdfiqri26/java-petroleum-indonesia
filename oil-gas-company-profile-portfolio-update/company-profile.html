@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Company Profile | Oil and Gas Consulting</title>
+
+    <link rel="icon" type="image/png" href="css/assets/logotest.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Company profile for a professional upstream oil and gas consulting firm providing technical, economic, and strategic advisory services.">
+
+    <meta property="og:title" content="Company Profile | Oil and Gas Consulting">
+    <meta property="og:description" content="Professional upstream oil and gas advisory for technical, economic, and investment decisions.">
+    <meta property="og:image" content="css/assets/header.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="inner-page">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+
+        <div class="logo">
+            <a href="index.html" aria-label="Back to Home">
+                <img src="css/assets/logotest2.png" alt="Java Petroleum Indonesia Logo">
+            </a>
+        </div>
+
+        <ul id="navMenu">
+            <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+
+            <li class="nav-dropdown">
+                <a href="services-detail.html" class="dropdown-toggle">
+                    <span data-i18n="nav_services">Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="services-detail.html" data-i18n="dropdown_services_detail">Explore Services</a></li>
+                    <li><a href="index.html#service-1" data-i18n="dropdown_service_1">Reservoir & Production</a></li>
+                    <li><a href="index.html#service-2" data-i18n="dropdown_service_2">Economic & Fiscal</a></li>
+                    <li><a href="index.html#service-3" data-i18n="dropdown_service_3">Field Development</a></li>
+                </ul>
+            </li>
+
+            <li><a href="company-profile.html" class="active" data-i18n="nav_company">Company</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+            <li><a href="index.html#purchase" data-i18n="nav_purchase">Purchase</a></li>
+            <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" type="button" aria-label="English">
+                    <img src="css/assets/us_flag_logo.png" alt="English Flag">
+                </button>
+
+                <button class="lang-btn" data-lang="id" type="button" aria-label="Bahasa Indonesia">
+                    <img src="css/assets/id_flag_logo.png" alt="Indonesia Flag">
+                </button>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+    <header class="inner-page-hero company-hero">
+        <div class="inner-hero-content">
+            <span class="hero-label" data-i18n="company_label">Company Profile</span>
+            <h1 data-i18n="company_title">Professional Upstream Oil & Gas Advisory Firm</h1>
+            <p data-i18n="company_desc">
+                We support operators, investors, and institutions with integrated technical, economic, and strategic analysis for clearer upstream project decisions.
+            </p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- COMPANY OVERVIEW -->
+        <section class="company-overview">
+            <div class="two-column-layout">
+                <div>
+                    <span class="section-label" data-i18n="company_overview_label">Who We Are</span>
+                    <h2 data-i18n="company_overview_title">A decision-oriented consulting partner for upstream projects</h2>
+                    <p data-i18n="company_overview_p1">
+                        Oil and Gas Consulting provides professional advisory services for upstream energy projects, combining engineering understanding, economic evaluation, and commercial insight.
+                    </p>
+                    <p data-i18n="company_overview_p2">
+                        Our work is structured to help clients evaluate assets, screen opportunities, review project assumptions, and prepare practical recommendations for investment or development decisions.
+                    </p>
+                </div>
+
+                <div class="company-card identity-card">
+                    <h3 data-i18n="company_identity_title">Corporate Identity</h3>
+                    <ul class="identity-list">
+                        <li><strong data-i18n="company_identity_1_label">Business focus:</strong> <span data-i18n="company_identity_1_value">Upstream oil & gas advisory</span></li>
+                        <li><strong data-i18n="company_identity_2_label">Core services:</strong> <span data-i18n="company_identity_2_value">Technical, economic, and strategic consulting</span></li>
+                        <li><strong data-i18n="company_identity_3_label">Location:</strong> <span data-i18n="company_identity_3_value">Jakarta, Indonesia</span></li>
+                        <li><strong data-i18n="company_identity_4_label">Client type:</strong> <span data-i18n="company_identity_4_value">Operators, investors, and institutions</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FACTS -->
+        <section class="company-facts-section">
+            <div class="fact-grid">
+                <div class="fact-card">
+                    <strong>01</strong>
+                    <span data-i18n="company_fact_1">Integrated technical and commercial evaluation</span>
+                </div>
+                <div class="fact-card">
+                    <strong>02</strong>
+                    <span data-i18n="company_fact_2">Practical recommendations for decision makers</span>
+                </div>
+                <div class="fact-card">
+                    <strong>03</strong>
+                    <span data-i18n="company_fact_3">Support for asset, field, and investment review</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION MISSION -->
+        <section class="vision-mission-section">
+            <div class="detail-intro">
+                <h2 data-i18n="vm_title">Vision & Mission</h2>
+                <p data-i18n="vm_desc">Our direction is built around reliable analysis, clear communication, and practical project support.</p>
+            </div>
+
+            <div class="mission-grid">
+                <article class="company-card">
+                    <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3 data-i18n="vision_title">Vision</h3>
+                    <p data-i18n="vision_desc">To become a trusted upstream oil and gas advisory partner known for reliable evaluation and practical decision support.</p>
+                </article>
+
+                <article class="company-card">
+                    <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3 data-i18n="mission_title">Mission</h3>
+                    <p data-i18n="mission_desc">To deliver structured technical, economic, and strategic advisory services that help clients reduce uncertainty and improve project decisions.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CORE VALUES -->
+        <section class="values-section">
+            <div class="detail-intro">
+                <h2 data-i18n="values_title">Core Values</h2>
+                <p data-i18n="values_desc">The principles that guide every consultation, evaluation, and recommendation.</p>
+            </div>
+
+            <div class="value-grid">
+                <article class="value-card">
+                    <h3 data-i18n="value_1_title">Integrity</h3>
+                    <p data-i18n="value_1_desc">We provide objective and professional recommendations based on available data and transparent assumptions.</p>
+                </article>
+
+                <article class="value-card">
+                    <h3 data-i18n="value_2_title">Reliability</h3>
+                    <p data-i18n="value_2_desc">We focus on consistent analysis, clear outputs, and decision-ready reporting.</p>
+                </article>
+
+                <article class="value-card">
+                    <h3 data-i18n="value_3_title">Practicality</h3>
+                    <p data-i18n="value_3_desc">We keep recommendations applicable to real upstream project constraints and business needs.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- COMPETENCIES -->
+        <section class="competency-section">
+            <div class="two-column-layout">
+                <div>
+                    <span class="section-label" data-i18n="competency_label">Consultant Competencies</span>
+                    <h2 data-i18n="competency_title">Technical depth with commercial perspective</h2>
+                    <p data-i18n="competency_desc">Our advisory work connects engineering data, fiscal assumptions, operational constraints, and investment objectives.</p>
+                </div>
+
+                <div class="profile-list">
+                    <div><i class="fa-solid fa-check"></i><span data-i18n="competency_1">Reservoir and production performance review</span></div>
+                    <div><i class="fa-solid fa-check"></i><span data-i18n="competency_2">PSC economics and fiscal modeling</span></div>
+                    <div><i class="fa-solid fa-check"></i><span data-i18n="competency_3">Field development planning support</span></div>
+                    <div><i class="fa-solid fa-check"></i><span data-i18n="competency_4">Technical due diligence and asset screening</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="page-cta-section">
+            <div class="cta-panel">
+                <span class="section-label" data-i18n="company_cta_label">Next Step</span>
+                <h2 data-i18n="company_cta_title">Need a company profile or project proposal?</h2>
+                <p data-i18n="company_cta_desc">Contact us to discuss your project scope, required analysis, available data, and expected deliverables.</p>
+                <div class="cta-buttons">
+                    <a href="portfolio.html" class="btn btn-primary" data-i18n="company_cta_portfolio">View Portfolio</a>
+                    <a href="index.html#contact" class="btn btn-outline" data-i18n="company_cta_contact">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © <span id="currentYear">2026</span>
+            <span data-i18n="footer_rights">Oil and Gas Consulting. All Rights Reserved.</span>
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
