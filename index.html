@@ -31,10 +31,34 @@
         </div>
 
         <ul id="navMenu">
-            <li><a href="#about" data-i18n="nav_about">About</a></li>
-            <li><a href="#services" data-i18n="nav_services">Services</a></li>
-            <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
-            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            <li>
+                <a href="#about" data-i18n="nav_about">About</a>
+            </li>
+
+            <li class="nav-dropdown">
+                <a href="#services" class="dropdown-toggle">
+                    <span data-i18n="nav_services">Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#service-1" data-i18n="dropdown_service_1">Reservoir & Production</a></li>
+                    <li><a href="#service-2" data-i18n="dropdown_service_2">Economic & Fiscal</a></li>
+                    <li><a href="#service-3" data-i18n="dropdown_service_3">Field Development</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#experience" data-i18n="nav_experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#purchase" data-i18n="nav_purchase">Purchase</a>
+            </li>
+
+            <li>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </li>
         </ul>
 
         <div class="nav-actions">
@@ -145,7 +169,7 @@
 
             <div class="services">
 
-                <div class="card">
+                <div class="card" id="service-1">
                     <div class="icon">
                         <i class="fa-solid fa-oil-well"></i>
                     </div>
@@ -157,7 +181,7 @@
                     </p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="service-2">
                     <div class="icon">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
@@ -169,7 +193,7 @@
                     </p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="service-3">
                     <div class="icon">
                         <i class="fa-solid fa-clipboard-check"></i>
                     </div>
@@ -232,32 +256,253 @@
 
         </section>
 
-        <!-- CONTACT -->
-        <section id="contact">
+        <!-- SELECTED EXPERIENCE -->
+        <section id="selected-experience" class="selected-experience">
 
-            <h2 data-i18n="contact_title">Contact Us</h2>
+            <h2 data-i18n="selected_exp_title">Selected Experience</h2>
 
-            <div class="contact-box">
+            <p class="section-intro" data-i18n="selected_exp_desc">
+                Selected advisory experience supporting upstream oil and gas evaluation,
+                investment decisions, and field development planning.
+            </p>
 
-                <p>
-                    <strong data-i18n="contact_email">Email:</strong>
-                    <a href="mailto:mraphael@java-petroleum.com">
-                        mraphael@java-petroleum.com
-                    </a>
-                </p>
+            <div class="experience-grid">
 
-                <p>
-                    <strong data-i18n="contact_phone">Phone:</strong>
-                    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project." target="_blank">
-                        +62 857-1439-3515
-                    </a>
-                </p>
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_1_tag">Asset Evaluation</span>
 
-                <p>
-                    <strong data-i18n="contact_location">Location:</strong>
-                    <span data-i18n="contact_location_value">Jakarta, Indonesia</span>
-                </p>
+                    <h3 data-i18n="selected_exp_1_title">Upstream Asset Evaluation</h3>
 
+                    <p data-i18n="selected_exp_1_desc">
+                        Technical and commercial evaluation of upstream oil and gas assets,
+                        including production potential, reserves outlook, cost assumptions,
+                        and investment screening.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_2_tag">Economic Review</span>
+
+                    <h3 data-i18n="selected_exp_2_title">PSC Economic Assessment</h3>
+
+                    <p data-i18n="selected_exp_2_desc">
+                        Cashflow modeling and fiscal analysis for Production Sharing Contract
+                        projects, including NPV, IRR, payout, sensitivity, and scenario evaluation.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_3_tag">Development Planning</span>
+
+                    <h3 data-i18n="selected_exp_3_title">Field Development Planning Support</h3>
+
+                    <p data-i18n="selected_exp_3_desc">
+                        Support for development concept selection, production strategy,
+                        CAPEX/OPEX review, project scheduling, and risk assessment.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <span class="experience-tag" data-i18n="selected_exp_4_tag">Technical Review</span>
+
+                    <h3 data-i18n="selected_exp_4_title">Production & Well Performance Review</h3>
+
+                    <p data-i18n="selected_exp_4_desc">
+                        Review of production behavior, well performance, operating constraints,
+                        and optimization opportunities to improve asset performance.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONSULTANT PROFILE -->
+        <section class="consultant-profile">
+
+            <div class="profile-wrapper">
+
+                <div class="profile-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+
+                <div class="profile-content">
+                    <span class="section-label" data-i18n="profile_label">Consultant Profile</span>
+
+                    <h2 data-i18n="profile_title">
+                        Practical Advisory Backed by Technical and Commercial Insight
+                    </h2>
+
+                    <p data-i18n="profile_desc">
+                        Our consulting approach combines upstream engineering understanding,
+                        economic evaluation, and strategic advisory experience to help clients
+                        make clearer and more reliable project decisions.
+                    </p>
+
+                    <div class="profile-points">
+                        <span data-i18n="profile_point_1">Reservoir & Production Understanding</span>
+                        <span data-i18n="profile_point_2">Economic & Fiscal Evaluation</span>
+                        <span data-i18n="profile_point_3">Investment-Oriented Recommendations</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+
+            <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+
+            <p class="section-intro" data-i18n="faq_desc">
+                Common questions about our oil and gas consulting services, software tools,
+                and project support.
+            </p>
+
+            <div class="faq-list">
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_1_q">
+                        What type of oil and gas projects do you support?
+                    </summary>
+
+                    <p data-i18n="faq_1_a">
+                        We support upstream oil and gas projects including asset evaluation,
+                        production review, field development planning, PSC economic analysis,
+                        and technical due diligence.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_2_q">
+                        Can you support PSC economic evaluation?
+                    </summary>
+
+                    <p data-i18n="faq_2_a">
+                        Yes. We provide PSC economic analysis including cashflow modeling,
+                        NPV, IRR, payout calculation, cost recovery, gross split, sensitivity,
+                        and scenario evaluation.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_3_q">
+                        Do you provide technical due diligence services?
+                    </summary>
+
+                    <p data-i18n="faq_3_a">
+                        Yes. We provide independent technical and commercial review to support
+                        acquisition, divestment, financing, project screening, and investment decisions.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary data-i18n="faq_4_q">
+                        Are the software tools free to download?
+                    </summary>
+
+                    <p data-i18n="faq_4_a">
+                        Yes. Selected oil and gas tools are provided as free resources to support
+                        technical and economic evaluation activities.
+                    </p>
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- PURCHASE -->
+        <section id="purchase" class="purchase-section">
+
+            <span class="section-label" data-i18n="purchase_label">Professional Purchase</span>
+
+            <h2 data-i18n="purchase_title">Choose a Professional Support Package</h2>
+
+            <p class="section-intro" data-i18n="purchase_desc">
+                Select a consulting or software support package, submit your project details,
+                and receive a professional quotation or invoice confirmation.
+            </p>
+
+            <div class="purchase-steps">
+                <div class="purchase-step">
+                    <strong>01</strong>
+                    <span data-i18n="purchase_step_1">Choose package</span>
+                </div>
+
+                <div class="purchase-step">
+                    <strong>02</strong>
+                    <span data-i18n="purchase_step_2">Send project details</span>
+                </div>
+
+                <div class="purchase-step">
+                    <strong>03</strong>
+                    <span data-i18n="purchase_step_3">Receive quotation / invoice</span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+
+                <article class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-badge" data-i18n="package_1_badge">Starter</span>
+                        <h3 data-i18n="package_1_title">Technical Consultation</h3>
+                        <p data-i18n="package_1_desc">Initial discussion and professional review for early-stage upstream questions.</p>
+                    </div>
+
+                    <div class="price" data-i18n="package_price_quote">Request Quotation</div>
+
+                    <ul>
+                        <li data-i18n="package_1_item_1">Project requirement review</li>
+                        <li data-i18n="package_1_item_2">Online consultation session</li>
+                        <li data-i18n="package_1_item_3">Summary recommendation</li>
+                    </ul>
+
+                    <a href="checkout.html?plan=consultation" class="btn btn-primary order-btn" data-plan="Technical Consultation" data-i18n="package_btn">Order Package</a>
+                </article>
+
+                <article class="pricing-card featured">
+                    <div class="pricing-header">
+                        <span class="pricing-badge" data-i18n="package_2_badge">Recommended</span>
+                        <h3 data-i18n="package_2_title">Economic Evaluation</h3>
+                        <p data-i18n="package_2_desc">PSC economic model review for cashflow, NPV, IRR, sensitivity, and investment screening.</p>
+                    </div>
+
+                    <div class="price" data-i18n="package_price_custom">Custom Project Fee</div>
+
+                    <ul>
+                        <li data-i18n="package_2_item_1">PSC / fiscal model setup</li>
+                        <li data-i18n="package_2_item_2">NPV, IRR, payout, and sensitivity</li>
+                        <li data-i18n="package_2_item_3">Professional evaluation summary</li>
+                    </ul>
+
+                    <a href="checkout.html?plan=economic" class="btn btn-primary order-btn" data-plan="Economic Evaluation" data-i18n="package_btn">Order Package</a>
+                </article>
+
+                <article class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-badge" data-i18n="package_3_badge">Advanced</span>
+                        <h3 data-i18n="package_3_title">Integrated Advisory</h3>
+                        <p data-i18n="package_3_desc">Technical, economic, and strategic support for field development or asset evaluation.</p>
+                    </div>
+
+                    <div class="price" data-i18n="package_price_scope">Based on Scope</div>
+
+                    <ul>
+                        <li data-i18n="package_3_item_1">Reservoir / production review</li>
+                        <li data-i18n="package_3_item_2">Development and cost assumptions</li>
+                        <li data-i18n="package_3_item_3">Decision-oriented recommendation</li>
+                    </ul>
+
+                    <a href="checkout.html?plan=integrated" class="btn btn-primary order-btn" data-plan="Integrated Advisory" data-i18n="package_btn">Order Package</a>
+                </article>
+
+            </div>
+
+            <div class="purchase-note">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span data-i18n="purchase_note">Secure request flow: order details are sent to the consultant first. Payment is confirmed only after quotation or invoice approval.</span>
             </div>
 
         </section>
@@ -313,12 +558,45 @@
 
         </section>
 
+        <!-- CONTACT -->
+        <section id="contact">
+
+            <h2 data-i18n="contact_title">Contact Us</h2>
+
+            <div class="contact-box">
+
+                <p>
+                    <strong data-i18n="contact_email">Email:</strong>
+                    <a href="mailto:mraphael@java-petroleum.com">
+                        mraphael@java-petroleum.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong data-i18n="contact_phone">Phone:</strong>
+                    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project."
+                        target="_blank">
+                        +62 857-1439-3515
+                    </a>
+                </p>
+
+                <p>
+                    <strong data-i18n="contact_location">Location:</strong>
+                    <span data-i18n="contact_location_value">Jakarta, Indonesia</span>
+                </p>
+
+            </div>
+
+        </section>
+
     </main>
 
     <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/6285714393515?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20oil%20and%20gas%20consulting%20project."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
     <!-- FOOTER -->
     <footer>
         <p>
